@@ -1,8 +1,8 @@
 //
-//  ViewController.swift
+//  BaseObject.m
 //  UtilClass
 //
-//  Created by JiangT on 2019/3/20.
+//  Created by JiangT on 2019/3/31.
 //  Copyright © 2019 JiangT. All rights reserved.
 //
 
@@ -94,11 +94,11 @@
 {
     for (NSString *key in [jsonDic allKeys]) {
         id value = [jsonDic objectForKey:key];
-
+        
         if (![value isKindOfClass:[NSString class]]) {
-//            NSLog(@"Non stringValue for key: %@, value:%@, valueCalss:%@", key, value, [value class]);
+            //            NSLog(@"Non stringValue for key: %@, value:%@, valueCalss:%@", key, value, [value class]);
         }
-
+        
         if ([value isKindOfClass:[NSNull class]]) {
             continue;
         }
